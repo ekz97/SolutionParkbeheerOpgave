@@ -5,16 +5,16 @@ namespace ParkBusinessLayer.Model
 {
     public class Park
     {
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
         public string Naam { get; private set; }
         public string Locatie { get; private set; }
         private List<Huis> _huis =new List<Huis>(){ };
 
-        public Park(string id, string naam, string locatie, List<Huis> huis) : this(id,naam,locatie)
+        public Park(string? id, string naam, string locatie, List<Huis> huis) : this(id,naam,locatie)
         {
             _huis = huis;
         }
-        public Park(string id, string naam, string locatie)
+        public Park(string? id, string naam, string locatie)
         {
             ZetId(id);
             ZetNaam(naam);

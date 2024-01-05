@@ -90,5 +90,7 @@ namespace ParkBusinessLayer.Model
             if (id <= 0) throw new ParkException("zetid");
             Id = id;
         }
+
+       
     }
 }

@@ -11,7 +11,7 @@ namespace ParkBusinessLayer.Interfaces
     {
         bool HeeftContract(DateTime startDatum, int huurderid, int huisid);
         void VoegContractToe(Huurcontract contract);
-        void AnnuleerContract(Huurcontract contract);
+        void AnnuleerContract(Huurcontract huurcontract);
         bool HeeftContract(string id);
         void UpdateContract(Huurcontract contract);
         Huurcontract GeefContract(string id);
